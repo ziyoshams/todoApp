@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A simple Todo List app. Uses your browser's local storage.">
+<meta name="tags" content="todo app, online app,">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online ToDo List</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link href="styles/main.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <input type="text" id="input" placeholder="Enter here...">
+    <button type="submit" id="submit">
+        <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="add" fill="#D8D8D8">
+                <path d="M33,27 L33,18.0000191 C33,16.3473186 31.6568542,15 30,15 C28.3465171,15 27,16.3431543 27,18.0000191 L27,27 L18.0000191,27 C16.3473186,27 15,28.3431458 15,30 C15,31.6534829 16.3431543,33 18.0000191,33 L27,33 L27,41.9999809 C27,43.6526814 28.3431458,45 30,45 C31.6534829,45 33,43.6568457 33,41.9999809 L33,33 L41.9999809,33 C43.6526814,33 45,31.6568542 45,30 C45,28.3465171 43.6568457,27 41.9999809,27 L33,27 Z" id="Combined-Shape"></path>                </g>
+            </g>
+        </svg>
+    </button>
+</header>
+
+<ul class="items" id="list"></ul>
+
+<ul class="completedItems" id="completedList"></ul>
+
+<script src="js/main.js"></script>
+</body>
+
+
+
+</html>

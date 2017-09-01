@@ -1,0 +1,183 @@
+body{
+    padding: 0px;
+    margin:0px;
+    font-family:"Roboto", sans-serif;
+    background: #ecf0f1;
+}
+
+::selection{
+    color: #fffeee;
+    background: #e74c3c;
+}
+::-webkit-input-placeholder{
+    color:#ecf0f1;
+}
+::-moz-input-placeholder{
+    color:#ecf0f1;
+}
+::input-placeholder{
+    color:#ecf0f1;
+}
+
+header{
+    width: 100%;
+    max-width:768px;
+    min-width: 300px;
+    height: 100px;
+    padding:20px;
+    box-sizing:border-box;
+    box-shadow: 0px 1px 2px #777;
+    background:#34495e;
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom:100px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    z-index: 10;
+}
+
+header #input{
+    width:100%;
+    height:60px;
+    outline:none;
+    border:none;
+    font-size: 1.2em;
+    text-indent:20px;
+    position: relative;
+    color: #ffffff;
+    padding-right: 65px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-sizing:border-box;
+    background: rgba(0,0,0,0.15);
+
+
+}
+
+header #submit{
+    width:60px;
+    height:60px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    border-radius:30px;
+    border:none;
+    outline:none;
+    padding: 0px;
+    background-color:#ffffff;
+    font-size: 2em;
+    text-align: center;
+    color:green;
+    vertical-align: middle;
+    transition: all 500ms ease-in;
+}
+
+header #submit:hover{
+    cursor: pointer;
+    background: #ffffff;
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #f1f1f1 54%, #f6f6f6 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#f1f1f1 54%,#f6f6f6 100%);
+    background: radial-gradient(ellipse at center,  #ffffff 0%,#f1f1f1 54%,#f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 );
+
+}
+header #submit svg:hover #add{
+    transition: all 200ms ease-in;
+    fill:#4CD964;
+}
+/* SVG Controll */
+header #submit svg {
+    left: 20px;
+    top: 20px;
+}
+
+.items, .completedItems{
+    width:100%;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 120px;
+
+}
+
+.items li, .completedItems li{
+    width: 90%;
+    max-width:768px;
+    min-width: 300px;
+    font-weight: 300;
+    border-radius:10px;
+    position:relative;
+    padding-left: 14px;
+    padding-right: 93px;
+    box-sizing: border-box;
+    border:none;
+    line-height:1.6;
+    display: flex;
+    min-height:60px;
+    margin:10px auto;
+}
+
+.items li p, .completedItems li p{
+  margin: auto 0;
+}
+
+.items li{
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #b7b7b7;
+}
+
+.completedItems li{
+    background-color: #83f7b3;
+}
+
+.items li #remove, .completedItems li #remove{
+    display: block;
+    border:none;
+    outline:none;
+    padding: 0px;
+    width:50px;
+    height:50px;
+    background: none;
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    right:60px;
+    transform:translateY(-50%);
+
+}
+
+.completedItems li #remove{
+    right:15px;
+}
+
+.items li #complete{
+    border:none;
+    outline:none;
+    width:50px;
+    height:50px;
+    background: #fff;
+    position: absolute;
+    top:50%;
+    right:10px;
+    cursor:pointer;
+    transform:translateY(-50%);
+    border-left: 0.5px solid #eee;
+}
+.items li #remove:hover svg #rm{
+    fill: #3b3b3b;
+}
+
+.completedItems li #remove svg #rm{
+    fill: #3b3b3b;
+}
+
+.items li #complete:hover{
+
+}
+
+.items #complete svg:hover circle{
+    fill:#4CD964;
+}
